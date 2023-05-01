@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="E2E">
+    <test name="SendMoney">
+        <groups>
+            <run>
+                <include name="default"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="SendMoneyRunner"></class>
+        </classes>
+    </test>
+</suite>
