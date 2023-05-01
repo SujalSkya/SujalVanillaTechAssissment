@@ -24,5 +24,9 @@ by asserting the sender's transaction id and receiver's transaction balance.
 
 <p>To use this application enter the sender's credential at Configuration>Config.properties.
 Enter mobile number (username) and password (password). Simultaneously, enter receiver's credential email (username2) 
-and password (password2) as well.
+and password (password2) as well. Also do add the capabilities of the used/connected devices which are mentioned
+in the Config.properites file.
 </p>
+
+<p>Since there is no push notification feature available in Khalti, was unable to validate the notification
+received by the recipient.</p>
