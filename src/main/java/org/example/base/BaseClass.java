@@ -22,21 +22,21 @@ public class BaseClass {
     public static void lunchApp() throws MalformedURLException {
 
         DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability("platformName", "<enter platform for sender>");
-        cap.setCapability("appium:platformVersion", "<enter sender device version>");
+        cap.setCapability("platformName", prop.getProperty("platformNameSender"));
+        cap.setCapability("appium:platformVersion", prop.getProperty("platformVersionSender");
         cap.setCapability("appium:automationName", "uiautomator2");
-        cap.setCapability("appium:deviceName", "<enter sender device name>");
+        cap.setCapability("appium:deviceName", prop.getProperty("deviceNameSender");
         cap.setCapability("appPackage", "com.khalti");
         cap.setCapability("appActivity", "com.khalti.MainActivity");
-        cap.setCapability("udid", "<enter sender device serial number>");
+        cap.setCapability("udid", prop.getProperty("udid1"));
 
 
         DesiredCapabilities cap1 = new DesiredCapabilities();
-        cap1.setCapability("platformName", "<enter platform for receiver>");
-        cap1.setCapability("appium:platformVersion", "12.0");
+        cap1.setCapability("platformName", prop.getProperty("platformNameReceiver"));
+        cap1.setCapability("appium:platformVersion", prop.getProperty("platformVersionSender");
         cap1.setCapability("appium:automationName", "uiautomator2");
-        cap1.setCapability("appium:deviceName", "<receiver device name>");
-        cap1.setCapability("udid","<receiver device serial number>");
+        cap1.setCapability("appium:deviceName", prop.getProperty("deviceNameReceiver");
+        cap1.setCapability("udid",prop.getProperty("udid2"));
         cap1.setCapability("appPackage", "com.khalti");
         cap1.setCapability("appActivity", "com.khalti.MainActivity");
 
