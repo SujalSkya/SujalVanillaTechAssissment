@@ -30,3 +30,4 @@ in the Config.properites file.
 
 <p>Since there is no push notification feature available in Khalti, was unable to validate the notification
 received by the recipient.</p>
+<p>Also when implementing page object model, facing an isssue due to use of multiple drivers.</p>
